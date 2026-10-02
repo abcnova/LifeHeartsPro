@@ -1,0 +1,155 @@
+# =====================================================
+#                    LifeHeartsPro
+#                    Deutsche Sprache
+# =====================================================
+#
+# Locale-Datei: de_eu.yml
+#
+# Du kannst in allen Nachrichten & Farbcodes benutzen.
+# Platzhalter wie %player%, %amount%, %lives%, %team%,
+# %mode%, %name%, %version% und %current% werden vom
+# Plugin automatisch ersetzt.
+#
+# =====================================================
+
+prefix: "&b&lLifeHeartsPro &8» "
+
+
+# =====================================================
+# ALLGEMEINE NACHRICHTEN
+# =====================================================
+
+reload: "&aPlugin neu geladen."
+no-permission: "&cDu hast keine Berechtigung."
+player-not-found: "&cSpieler nicht gefunden."
+invalid-number: "&cBitte gib eine gültige Zahl ein."
+players-only: "&cNur Spieler können diesen Befehl benutzen."
+
+
+# =====================================================
+# COMMAND BENUTZUNG
+# =====================================================
+
+lifehearts-usage: "&7Benutzung: &f/lifeheartspro <reload|revive|lives|actionbar|heartmode|team>"
+heart-usage: "&7Benutzung: &f/heart give <spieler> <anzahl>"
+team-usage: "&7Benutzung: &f/team <create|invite|accept|leave|kick|disband|info|list>"
+lives-admin-usage: "&cBenutzung: /lifeheartspro lives <set|add|remove> <spieler> <anzahl>"
+lives-action-usage: "&cBenutzung: /lifeheartspro lives <set|add|remove>"
+actionbar-usage: "&cBenutzung: /lifeheartspro actionbar <on|off>"
+heartmode-usage: "&7Benutzung: &f/lifeheartspro heartmode <display|heart>"
+heartmode-invalid: "&cBenutzung: /lifeheartspro heartmode <display|heart>"
+team-admin-usage: "&7Benutzung: &f/lifeheartspro team <glowing|tp|setspawn|admin> ..."
+team-glowing-usage: "&7Benutzung: &f/lifeheartspro team glowing <team> <farbe|off>"
+team-admin-action-usage: "&7Benutzung: &f/lifeheartspro team admin <invite|kick|disband> ..."
+team-admin-invite-usage: "&7Benutzung: &f/lifeheartspro team admin invite <spieler> <team>"
+team-admin-kick-usage: "&7Benutzung: &f/lifeheartspro team admin kick <spieler> <team>"
+team-admin-disband-usage: "&7Benutzung: &f/lifeheartspro team admin disband <team>"
+
+
+# =====================================================
+# ADMIN HILFE
+# =====================================================
+
+help-title: "&b&lAdmin-Befehle"
+help-reload: "&7/lifeheartspro reload &8- Plugin neu laden"
+help-revive: "&7/lifeheartspro revive <spieler> &8- Spieler wiederbeleben und entbannen"
+help-lives-set: "&7/lifeheartspro lives set <spieler> <anzahl>"
+help-lives-add: "&7/lifeheartspro lives add <spieler> <anzahl>"
+help-lives-remove: "&7/lifeheartspro lives remove <spieler> <anzahl>"
+help-actionbar: "&7/lifeheartspro actionbar <on|off>"
+help-heartmode: "&7/lifeheartspro heartmode <display|heart>"
+help-team-glowing: "&7/lifeheartspro team glowing <team> <farbe|off>"
+help-team-tp: "&7/lifeheartspro team tp <team>"
+help-team-setspawn: "&7/lifeheartspro team setspawn <team>"
+help-team-admin: "&7/lifeheartspro team admin <invite|kick|disband> &8- Teams direkt verwalten"
+
+
+# =====================================================
+# HERZ TRANSFER
+# =====================================================
+
+heart-given: "&aDu hast &f%amount% &aHerz(en) an &f%player% &agegeben."
+heart-received: "&aDu hast &f%amount% &aHerz(en) von &f%player% &aerhalten."
+heart-transfer-failed: "&cHerztransfer fehlgeschlagen."
+not-enough-lives: "&cDu hast nicht genug Leben."
+
+
+# =====================================================
+# LEBENS SYSTEM
+# =====================================================
+
+lives-updated: "&a%player% hat jetzt &f%lives% &aLeben."
+lives-message: "&7Du hast aktuell &c%lives% &7Leben."
+eliminated: "&cDu hast alle Herzen verloren und bist ausgeschieden."
+ban-message: "&cDu hast alle Herzen verloren\n&7und bist ausgeschieden."
+
+
+# =====================================================
+# REVIVE SYSTEM
+# =====================================================
+
+revive-success: "&aDu hast &f%player% &awiederbelebt."
+revived: "&aDu wurdest wiederbelebt!"
+player-revived: "&aDu hast &f%player% &awiederbelebt."
+you-were-revived: "&aDu wurdest von einem Admin wiederbelebt."
+
+
+# =====================================================
+# TEAM SYSTEM
+# =====================================================
+
+team-created: "&aTeam &f%team% &awurde erstellt."
+team-create-failed: "&cTeam konnte nicht erstellt werden."
+team-invite-sent: "&aEinladung an &f%player% &awurde gesendet."
+team-invite-received: "&aDu hast eine Team-Einladung von &f%player% &aerhalten. Nutze /team accept"
+team-invite-failed: "&cEinladung fehlgeschlagen."
+team-joined: "&aDu bist dem Team beigetreten."
+team-left: "&eDu hast dein Team verlassen."
+team-accept-failed: "&cKeine gültige Team-Einladung gefunden."
+team-not-in-team: "&cDu bist in keinem Team."
+team-friendly-fire-disabled: "&cFriendly Fire ist in deinem Team deaktiviert."
+team-kicked: "&eDu hast &f%player% &eaus dem Team entfernt."
+team-you-were-kicked: "&cDu wurdest aus dem Team entfernt."
+team-kick-failed: "&cDieser Spieler konnte nicht entfernt werden."
+team-disbanded: "&cDein Team wurde aufgelöst."
+team-disband-failed: "&cDas Team konnte nicht aufgelöst werden."
+team-info-title: "&b&lTeam Info"
+team-list-title: "&b&lTeams"
+team-info-name: "&7Team: &f%team%"
+team-info-members: "&7Mitglieder: &f%amount%"
+team-list-entry: "&7%team% &8(%amount% Spieler)"
+team-none: "Kein Team"
+team-admin-not-found: "&cTeam nicht gefunden: &f%team%"
+team-admin-action-failed: "&cTeam-Admin-Aktion fehlgeschlagen."
+team-admin-added: "&a%player% wurde direkt zu Team &f%team% &ahinzugefuegt."
+team-admin-added-target: "&aEin Admin hat dich zu Team &f%team% &ahinzugefuegt."
+team-admin-kicked: "&e%player% wurde aus Team &f%team% &eentfernt."
+team-admin-kicked-target: "&cEin Admin hat dich aus Team &f%team% &centfernt."
+team-admin-disbanded: "&cAdmin hat Team &f%team% &caufgeloest."
+team-glowing-updated: "&aTeam &f%team% &aglowt jetzt in &f%color%&a."
+team-glowing-invalid: "&cUngueltige Glowing-Farbe. Verfuegbare Farben: &f%colors%"
+team-teleported: "&aEs wurden &f%amount% &aonline Mitglied(er) von Team &f%team% &azu dir teleportiert."
+team-spawn-set: "&aRespawn-Punkt fuer Team &f%team% &awurde auf deine Position gesetzt."
+
+
+# =====================================================
+# SPIELER STATUS
+# =====================================================
+
+join-status: "&7Status &8» &fLeben: &b%lives% &8| &fTeam: &b%team%"
+lives-status-title: "&b&lLifeHearts Status"
+lives-status-player: "&7Spieler: &f%player%"
+lives-status-lives: "&7Leben: &c%lives%"
+lives-status-team: "&7Team: &b%team%"
+
+
+# =====================================================
+# ACTIONBAR UND HEARTMODE
+# =====================================================
+
+actionbar: "&c❤ &fLeben: &a%lives% &c❤ &8| &bTeam: &f%team%"
+actionbar-heart: "&c%red_hearts%&7%gray_hearts% &8| &bTeam: &f%team%"
+actionbar-enabled: "&aActionBar aktiviert."
+actionbar-disabled: "&cActionBar deaktiviert."
+heartmode-current: "&7Aktueller Heartmode: &f%mode%"
+heartmode-updated: "&aHeartmode ist jetzt &f%mode%&a."

@@ -1,0 +1,471 @@
+# =====================================================
+#                    LifeHeartsPro
+#                   Message Sounds
+# =====================================================
+#
+# This file controls the small sounds players hear when
+# LifeHeartsPro sends normal chat/status messages.
+#
+# Every message sound can be changed or disabled.
+#
+# enabled:
+# true  = play a sound for this message
+# false = do not play a sound for this message
+#
+# sound:
+# Use Bukkit/Paper sound names such as:
+# ENTITY_EXPERIENCE_ORB_PICKUP
+# BLOCK_NOTE_BLOCK_PLING
+# BLOCK_NOTE_BLOCK_BASS
+# ENTITY_VILLAGER_NO
+# ENTITY_PLAYER_LEVELUP
+# BLOCK_AMETHYST_BLOCK_CHIME
+#
+# volume:
+# Keep this low for clean UI feedback.
+# Recommended range: 0.25 - 0.70
+#
+# pitch:
+# Higher pitch feels lighter/happier.
+# Lower pitch feels heavier/error-like.
+#
+# =====================================================
+
+sounds:
+
+  # Master switch for all LifeHeartsPro message sounds.
+  enabled: true
+
+  messages:
+
+    # =================================================
+    # GENERAL MESSAGES
+    # =================================================
+
+    reload:
+      enabled: true
+      sound: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.45
+      pitch: 1.25
+
+    no-permission:
+      enabled: true
+      sound: ENTITY_VILLAGER_NO
+      volume: 0.45
+      pitch: 0.75
+
+    player-not-found:
+      enabled: true
+      sound: ENTITY_VILLAGER_NO
+      volume: 0.40
+      pitch: 0.85
+
+    invalid-number:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_BASS
+      volume: 0.40
+      pitch: 0.75
+
+    players-only:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_BASS
+      volume: 0.35
+      pitch: 0.80
+
+    # =================================================
+    # COMMAND USAGE AND HELP
+    # =================================================
+
+    lifehearts-usage:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 0.35
+      pitch: 1.00
+
+    heart-usage:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 0.35
+      pitch: 1.00
+
+    team-usage:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 0.35
+      pitch: 1.00
+
+    team-admin-usage:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 0.35
+      pitch: 1.00
+
+    team-admin-action-usage:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 0.35
+      pitch: 1.00
+
+    team-admin-invite-usage:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 0.35
+      pitch: 1.05
+
+    team-admin-kick-usage:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 0.35
+      pitch: 0.95
+
+    team-admin-disband-usage:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 0.35
+      pitch: 0.90
+
+    team-glowing-usage:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 0.35
+      pitch: 1.05
+
+    lives-admin-usage:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 0.35
+      pitch: 1.00
+
+    lives-action-usage:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 0.35
+      pitch: 1.00
+
+    actionbar-usage:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 0.35
+      pitch: 1.00
+
+    heartmode-usage:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 0.35
+      pitch: 1.00
+
+    heartmode-invalid:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_BASS
+      volume: 0.40
+      pitch: 0.75
+
+    help-title:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 0.30
+      pitch: 1.15
+
+    # =================================================
+    # HEART TRANSFER
+    # =================================================
+
+    heart-given:
+      enabled: true
+      sound: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.50
+      pitch: 1.30
+
+    heart-received:
+      enabled: true
+      sound: ENTITY_PLAYER_LEVELUP
+      volume: 0.45
+      pitch: 1.20
+
+    heart-transfer-failed:
+      enabled: true
+      sound: ENTITY_VILLAGER_NO
+      volume: 0.45
+      pitch: 0.80
+
+    not-enough-lives:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_BASS
+      volume: 0.45
+      pitch: 0.70
+
+    # =================================================
+    # LIFE SYSTEM
+    # =================================================
+
+    lives-updated:
+      enabled: true
+      sound: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.45
+      pitch: 1.15
+
+    lives-message:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 0.35
+      pitch: 1.10
+
+    eliminated:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_BASS
+      volume: 0.55
+      pitch: 0.55
+
+    # =================================================
+    # REVIVE SYSTEM
+    # =================================================
+
+    revive-success:
+      enabled: true
+      sound: ENTITY_PLAYER_LEVELUP
+      volume: 0.50
+      pitch: 1.25
+
+    revived:
+      enabled: true
+      sound: ENTITY_PLAYER_LEVELUP
+      volume: 0.55
+      pitch: 1.35
+
+    player-revived:
+      enabled: true
+      sound: ENTITY_PLAYER_LEVELUP
+      volume: 0.50
+      pitch: 1.25
+
+    you-were-revived:
+      enabled: true
+      sound: ENTITY_PLAYER_LEVELUP
+      volume: 0.55
+      pitch: 1.35
+
+    # =================================================
+    # TEAM SYSTEM
+    # =================================================
+
+    team-created:
+      enabled: true
+      sound: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.45
+      pitch: 1.20
+
+    team-create-failed:
+      enabled: true
+      sound: ENTITY_VILLAGER_NO
+      volume: 0.45
+      pitch: 0.80
+
+    team-invite-sent:
+      enabled: true
+      sound: ENTITY_ITEM_PICKUP
+      volume: 0.35
+      pitch: 1.25
+
+    team-invite-received:
+      enabled: true
+      sound: BLOCK_AMETHYST_BLOCK_CHIME
+      volume: 0.45
+      pitch: 1.15
+
+    team-invite-failed:
+      enabled: true
+      sound: ENTITY_VILLAGER_NO
+      volume: 0.40
+      pitch: 0.85
+
+    team-joined:
+      enabled: true
+      sound: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.45
+      pitch: 1.25
+
+    team-left:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 0.35
+      pitch: 0.85
+
+    team-accept-failed:
+      enabled: true
+      sound: ENTITY_VILLAGER_NO
+      volume: 0.40
+      pitch: 0.85
+
+    team-not-in-team:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_BASS
+      volume: 0.35
+      pitch: 0.80
+
+    team-friendly-fire-disabled:
+      enabled: true
+      sound: ENTITY_VILLAGER_NO
+      volume: 0.35
+      pitch: 0.75
+
+    team-kicked:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 0.40
+      pitch: 0.85
+
+    team-you-were-kicked:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_BASS
+      volume: 0.45
+      pitch: 0.65
+
+    team-kick-failed:
+      enabled: true
+      sound: ENTITY_VILLAGER_NO
+      volume: 0.40
+      pitch: 0.85
+
+    team-disbanded:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_BASS
+      volume: 0.45
+      pitch: 0.70
+
+    team-disband-failed:
+      enabled: true
+      sound: ENTITY_VILLAGER_NO
+      volume: 0.40
+      pitch: 0.85
+
+    team-info-title:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 0.30
+      pitch: 1.05
+
+    team-list-title:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 0.30
+      pitch: 1.05
+
+    team-admin-not-found:
+      enabled: true
+      sound: ENTITY_VILLAGER_NO
+      volume: 0.40
+      pitch: 0.85
+
+    team-admin-action-failed:
+      enabled: true
+      sound: ENTITY_VILLAGER_NO
+      volume: 0.40
+      pitch: 0.80
+
+    team-admin-added:
+      enabled: true
+      sound: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.45
+      pitch: 1.20
+
+    team-admin-added-target:
+      enabled: true
+      sound: BLOCK_AMETHYST_BLOCK_CHIME
+      volume: 0.45
+      pitch: 1.15
+
+    team-admin-kicked:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_BASS
+      volume: 0.40
+      pitch: 0.75
+
+    team-admin-kicked-target:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_BASS
+      volume: 0.45
+      pitch: 0.65
+
+    team-admin-disbanded:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_BASS
+      volume: 0.45
+      pitch: 0.65
+
+    team-glowing-updated:
+      enabled: true
+      sound: BLOCK_AMETHYST_BLOCK_CHIME
+      volume: 0.45
+      pitch: 1.25
+
+    team-glowing-invalid:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_BASS
+      volume: 0.40
+      pitch: 0.75
+
+    team-teleported:
+      enabled: true
+      sound: ENTITY_ENDERMAN_TELEPORT
+      volume: 0.45
+      pitch: 1.15
+
+    team-spawn-set:
+      enabled: true
+      sound: BLOCK_BEACON_ACTIVATE
+      volume: 0.45
+      pitch: 1.20
+
+    # =================================================
+    # PLAYER STATUS
+    # =================================================
+
+    join-status:
+      enabled: true
+      sound: BLOCK_AMETHYST_BLOCK_CHIME
+      volume: 0.35
+      pitch: 1.15
+
+    lives-status-title:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 0.30
+      pitch: 1.10
+
+    # =================================================
+    # ACTIONBAR AND HEART MODE
+    # =================================================
+
+    actionbar-enabled:
+      enabled: true
+      sound: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.40
+      pitch: 1.20
+
+    actionbar-disabled:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 0.35
+      pitch: 0.85
+
+    heartmode-current:
+      enabled: true
+      sound: BLOCK_NOTE_BLOCK_PLING
+      volume: 0.30
+      pitch: 1.05
+
+    heartmode-updated:
+      enabled: true
+      sound: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 0.45
+      pitch: 1.20
+
+    # =================================================
+    # UPDATE CHECKER
+    # =================================================
+
+    update_available:
+      enabled: true
+      sound: BLOCK_AMETHYST_BLOCK_CHIME
+      volume: 0.45
+      pitch: 1.00

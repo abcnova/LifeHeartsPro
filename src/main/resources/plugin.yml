@@ -1,0 +1,121 @@
+name: LifeHeartsPro
+version: 2.5.0
+main: de.nova.lifehearts.LifeHeartsPlugin
+api-version: '1.21'
+author: ABC_Nova
+description: Modern lives and teams with multilingual messages, heart transfer, action bars and PlaceholderAPI support
+softdepend: [PlaceholderAPI]
+
+# Player and administrator commands.
+commands:
+  lifeheartspro:
+    description: Main command
+    aliases: [lhp]
+  revive:
+    description: Revive shortcut
+  heart:
+    description: Transfer hearts
+  team:
+    description: Team commands
+  lives:
+    description: Show lives
+
+# Permission defaults keep gameplay commands available while protecting server controls.
+permissions:
+  lifeheartspro.admin:
+    description: Grants every LifeHeartsPro permission.
+    default: op
+    children:
+      lifeheartspro.reload: true
+      lifeheartspro.revive: true
+      lifeheartspro.actionbar: true
+      lifeheartspro.heartmode: true
+      lifeheartspro.lives.set: true
+      lifeheartspro.lives.add: true
+      lifeheartspro.lives.remove: true
+      lifeheartspro.lives.view: true
+      lifeheartspro.lives.view.others: true
+      lifeheartspro.heart.give: true
+      lifeheartspro.team.create: true
+      lifeheartspro.team.invite: true
+      lifeheartspro.team.accept: true
+      lifeheartspro.team.leave: true
+      lifeheartspro.team.kick: true
+      lifeheartspro.team.disband: true
+      lifeheartspro.team.info: true
+      lifeheartspro.team.list: true
+      lifeheartspro.team.glowing: true
+      lifeheartspro.team.tp: true
+      lifeheartspro.team.setspawn: true
+      lifeheartspro.team.admin: true
+      lifeheartspro.update.notify: true
+  lifeheartspro.reload:
+    description: Allows /lifeheartspro reload.
+    default: op
+  lifeheartspro.revive:
+    description: Allows /lifeheartspro revive and /revive.
+    default: op
+  lifeheartspro.actionbar:
+    description: Allows /lifeheartspro actionbar <on|off>.
+    default: op
+  lifeheartspro.heartmode:
+    description: Allows /lifeheartspro heartmode <display|heart>.
+    default: op
+  lifeheartspro.lives.set:
+    description: Allows setting player lives.
+    default: op
+  lifeheartspro.lives.add:
+    description: Allows adding player lives.
+    default: op
+  lifeheartspro.lives.remove:
+    description: Allows removing player lives.
+    default: op
+  lifeheartspro.lives.view:
+    description: Allows viewing your own lives with /lives.
+    default: true
+  lifeheartspro.lives.view.others:
+    description: Allows viewing other players lives with /lives <player>.
+    default: op
+  lifeheartspro.heart.give:
+    description: Allows giving hearts to other players with /heart give.
+    default: true
+  lifeheartspro.team.create:
+    description: Allows creating a team.
+    default: true
+  lifeheartspro.team.invite:
+    description: Allows inviting players to your team.
+    default: true
+  lifeheartspro.team.accept:
+    description: Allows accepting team invites.
+    default: true
+  lifeheartspro.team.leave:
+    description: Allows leaving your team.
+    default: true
+  lifeheartspro.team.kick:
+    description: Allows team owners to kick members.
+    default: true
+  lifeheartspro.team.disband:
+    description: Allows team owners to disband their team.
+    default: true
+  lifeheartspro.team.info:
+    description: Allows viewing team info.
+    default: true
+  lifeheartspro.team.list:
+    description: Allows listing teams.
+    default: true
+  lifeheartspro.team.glowing:
+    description: Allows changing team glowing colors.
+    default: op
+  lifeheartspro.team.tp:
+    description: Allows teleporting a whole team to yourself.
+    default: op
+  lifeheartspro.team.setspawn:
+    description: Allows setting a team respawn point.
+    default: op
+  lifeheartspro.team.admin:
+    description: Allows direct admin team invite, kick and disband commands.
+    default: op
+  lifeheartspro.update.notify:
+    description: Allows receiving update checker notifications.
+    default: op
+

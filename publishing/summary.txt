@@ -1,0 +1,1 @@
+A modern lives, hearts and teams plugin for Paper with heart transfers, team protection, action bars and multilingual configuration.

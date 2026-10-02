@@ -1,0 +1,260 @@
+# =====================================================
+#                    LifeHeartsPro
+#                     Configuration
+# =====================================================
+#
+# Thank you for using LifeHeartsPro.
+#
+# After changing values in this file, reload the plugin with:
+# /lifeheartspro reload
+#
+# Color codes:
+# Use & color codes in messages and formats.
+# Example: &c = red, &a = green, &7 = gray, &l = bold
+#
+# Placeholders used by formats:
+# %lives%      - Player lives
+# %team%       - Player team name
+# %red_hearts% - Current lives as red hearts
+# %gray_hearts% - Missing lives as gray hearts
+#
+# =====================================================
+
+
+# =====================================================
+# LANGUAGE SYSTEM
+# =====================================================
+#
+# Default language: en_us
+#
+# Available languages:
+# en_us - English (United States)
+# de_eu - German
+# es_es - Spanish
+# fr_fr - French
+#
+locale: en_us
+
+
+# =====================================================
+# UPDATE CHECKER
+# =====================================================
+#
+# Checks for a newer public version on startup.
+#
+# true  = enable update notifications for admins
+# false = disable update notifications
+#
+# No project id or timeout settings are exposed here.
+# Those internal defaults are handled by the plugin.
+
+update-checker:
+  enabled: false
+
+
+# =====================================================
+# DATA STORAGE
+# =====================================================
+#
+# Changes are kept in memory and written as one atomic snapshot.
+# This delay coalesces rapid life and team updates without doing
+# disk access inside combat, command or join events.
+
+storage:
+  flush-delay-ticks: 20
+
+
+# =====================================================
+# LIFE SYSTEM
+# =====================================================
+#
+# The life system controls how many hearts/lives players
+# have, how many they can collect, and what happens when
+# they reach zero.
+
+lives:
+
+  # Default lives a new player gets when joining.
+  default: 3
+
+  # If true, /lifeheartspro reload sets every online player
+  # exactly to the current lives.default value.
+  #
+  # Example:
+  # default: 2
+  # set-online-lives-to-default-on-reload: true
+  #
+  # After reload, online players will have exactly 2 lives.
+  #
+  # If false, reload will NOT reset everyone to default.
+  # Players are only clamped into min/max so nobody can stay
+  # above the configured maximum.
+  set-online-lives-to-default-on-reload: false
+
+  # Maximum lives a player can have.
+  # In heart mode this is also the number of heart slots.
+  #
+  # Example:
+  # max: 2
+  #
+  # A player with 2 lives sees 2 red hearts.
+  # A player with 1 life sees 1 red heart and 1 gray heart.
+  max: 3
+
+  # Minimum lives allowed.
+  # Keep this at 0 if players should be able to be eliminated.
+  min: 0
+
+  # Remove one life when a player dies.
+  lose-life-on-death: true
+
+  # PvP mode:
+  # true  = players only lose a life when another player kills them
+  # false = every death removes a life
+  only-lose-life-when-killed-by-player: true
+  
+  # Ban/kick players when they reach 0 lives.
+  # If false, players only receive the eliminated message.
+  ban-on-zero-lives: true
+
+
+# =====================================================
+# HEART TRANSFER SYSTEM
+# =====================================================
+#
+# Allows players to give hearts/lives to other players.
+
+heart-transfer:
+
+  # true  = players can transfer hearts
+  # false = heart transfers are disabled
+  enabled: true
+
+  # How many hearts a player must keep after transferring.
+  minimum-hearts-after-transfer: 1
+
+
+# =====================================================
+# TEAM SYSTEM
+# =====================================================
+#
+# Teams can be used to group players and prevent friendly
+# fire between teammates.
+
+teams:
+
+  # Enable or disable the whole team system.
+  enabled: true
+
+  # Maximum players per team.
+  max-members: 5
+
+  # New team names may contain letters, numbers, underscores
+  # and hyphens. Existing stored team names remain compatible.
+  name:
+    min-length: 3
+    max-length: 16
+
+  # true  = teammates can damage each other
+  # false = teammates cannot damage each other
+  friendly-fire: false
+
+  # Allow players to create their own teams.
+  allow-player-teams: true
+
+  # Allow players to leave their team.
+  allow-leave: true
+
+  # Allow team owners to kick members.
+  allow-kick: true
+
+  # Allow team owners to disband their team.
+  allow-disband: true
+
+  # Glowing colors are controlled through Minecraft scoreboard teams.
+  # true  = team glowing commands and enemy glowing can make players glow
+  # false = LifeHeartsPro removes its glow teams and does not glow anyone
+  glowing:
+    enabled: true
+
+  # If another plugin gives players separate scoreboards and the glow stays white,
+  # enable force-main-scoreboard. This is the strongest compatibility mode.
+  #
+  # Important:
+  # Enemy glowing is viewer-specific. If enemy-glowing.enabled is true,
+  # LifeHeartsPro will automatically use per-player glow scoreboards instead
+  # of force-main-scoreboard so each player only sees their own enemies in red.
+    force-main-scoreboard: false
+    sync-interval-ticks: 100
+
+  # Enemy glowing is disabled by default.
+  # true  = players in other LifeHeartsPro teams glow in the color below
+  # false = only teams with /lifeheartspro team glowing <team> <color> glow
+  enemy-glowing:
+    enabled: false
+    color: "dark_red"
+
+
+# =====================================================
+# ACTIONBAR SYSTEM
+# =====================================================
+#
+# Shows player lives and team status above the hotbar.
+
+actionbar:
+
+  # Enable or disable the ActionBar.
+  enabled: true
+
+  # How often the ActionBar updates.
+  # 20 ticks = 1 second
+  update-interval: 40
+
+  # display = normal text display, for example: Lives: 3
+  # heart   = red hearts plus gray missing hearts
+  mode: display
+
+  # Symbol used for active hearts.
+  heart-symbol: "❤"
+
+  # Symbol used for missing hearts in heart mode.
+  gray-heart-symbol: "❤"
+
+  # Text format used in display mode.
+  # If this stays unchanged, the selected language file is used.
+  display-format: "&c❤ &fLives: &a%lives% &c❤ &8| &bTeam: &f%team%"
+
+  # Text format used in heart mode.
+  # If this stays unchanged, the selected language file is used.
+  heart-format: "&c%red_hearts%&7%gray_hearts% &8| &bTeam: &f%team%"
+
+  # Reserved display toggles for future layouts.
+  show-lives: true
+  show-team: true
+
+
+# =====================================================
+# JOIN MESSAGE
+# =====================================================
+#
+# Sends a small status message to players when they join.
+
+join-message:
+
+  # Enable or disable the join status message.
+  enabled: true
+
+  # Reserved display toggles for future layouts.
+  show-lives: true
+  show-team: true
+
+
+# =====================================================
+# DEBUG MODE
+# =====================================================
+#
+# Only enable this if you are testing or reporting a bug.
+# Debug mode may print additional information to console.
+
+debug:
+  enabled: false

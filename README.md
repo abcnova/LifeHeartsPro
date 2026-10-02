@@ -1,5 +1,9 @@
 # LifeHeartsPro
 
+<p align="center">
+  <img src="assets/LifeHeartsPro.webp" alt="LifeHeartsPro logo" width="160">
+</p>
+
 **LifeHeartsPro is a configurable lives, hearts and teams plugin for modern Paper servers.** Build survival, SMP and event gameplay around limited lives, player heart transfers, team protection and clean status displays.
 
 [Download on Modrinth](https://modrinth.com/plugin/lifeheartspro) · [Download on CurseForge](https://www.curseforge.com/minecraft/bukkit-plugins/lifeheartspro) · [Download on SpigotMC](https://www.spigotmc.org/resources/lifeheartspro.133466/) · [Download on Hangar](https://hangar.papermc.io/ABC_Nova/LifeHeartsPro) · [Releases](https://github.com/abcnova/LifeHeartsPro/releases) · [Report an issue](https://github.com/abcnova/LifeHeartsPro/issues)

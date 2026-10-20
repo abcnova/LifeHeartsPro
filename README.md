@@ -8,6 +8,8 @@
 
 [Download on Modrinth](https://modrinth.com/plugin/lifeheartspro) · [Download on CurseForge](https://www.curseforge.com/minecraft/bukkit-plugins/lifeheartspro) · [Download on SpigotMC](https://www.spigotmc.org/resources/lifeheartspro.133466/) · [Download on Hangar](https://hangar.papermc.io/ABC_Nova/LifeHeartsPro) · [Releases](https://github.com/abcnova/LifeHeartsPro/releases) · [Report an issue](https://github.com/abcnova/LifeHeartsPro/issues)
 
+**Addon:** [FriendlyFire LHP Addon source and releases](https://github.com/abcnova/FriendlyFireLHPAddon) · [Modrinth](https://modrinth.com/plugin/friendlyfire-lifeheartspro-addon) · [CurseForge](https://www.curseforge.com/minecraft/bukkit-plugins/friendlyfire-lifeheartspro-addon) · [SpigotMC](https://www.spigotmc.org/resources/friendlyfire-lifeheartspro-addon.134347/) · [Hangar](https://hangar.papermc.io/ABC_Nova/FriendlyFire)
+
 ## Features
 
 - Configurable default, minimum and maximum lives

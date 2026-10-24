@@ -12,7 +12,7 @@
 - **Source:** https://github.com/abcnova/LifeHeartsPro
 - **Issues:** https://github.com/abcnova/LifeHeartsPro/issues
 - **Release:** https://github.com/abcnova/LifeHeartsPro/releases/tag/v2.5.0
-- **Icon:** `assets/LifeHeartsPro.webp` (existing public project icon)
+- **Icon:** `assets/LifeHeartsPro.png` (transparent PNG, 1024 x 1024)
 - **JAR:** `target/LifeHeartsPro-2.5.0.jar`
 - **JAR SHA-256:** `A29099B315A337B7ECD9763FB1CB744A45584CF5DC5BF66E05A60761DADBB136`
 - **Description:** `publishing/description.md`

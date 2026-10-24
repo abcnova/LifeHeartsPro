@@ -1,7 +1,7 @@
 # LifeHeartsPro
 
 <p align="center">
-  <img src="assets/LifeHeartsPro.webp" alt="LifeHeartsPro logo" width="160">
+  <img src="assets/LifeHeartsPro.png" alt="LifeHeartsPro logo" width="160">
 </p>
 
 **LifeHeartsPro is a configurable lives, hearts and teams plugin for modern Paper servers.** Build survival, SMP and event gameplay around limited lives, player heart transfers, team protection and clean status displays.
